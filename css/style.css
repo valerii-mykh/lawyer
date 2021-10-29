@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sunflower:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300,500,600,700");
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +23,17 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+.info {
+  border-bottom: 1px solid #000;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: "ColabReg";
+  font-weight: 700;
+  box-shadow: inset 0px 0px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -147,6 +158,7 @@ h2 {
 main {
   width: 100%;
   margin: auto;
+  position: relative;
 }
 main .block_one {
   padding-bottom: 10px;
@@ -174,15 +186,14 @@ main .block_one .leaders .top p {
   text-align: center;
 }
 main .block_one .leaders .top .left {
-  width: 40%;
+  width: 30%;
   background-color: rgba(128, 128, 128, 0.692);
 }
 main .block_one .leaders .top .right {
-  width: 40%;
+  width: 30%;
   background-color: rgba(128, 128, 128, 0.692);
 }
-main .block_one .leaders .top .img {
-  background-color: green;
+main .block_one .leaders .top img {
   width: 100%;
   height: 450px;
   border-radius: 10px;
@@ -395,10 +406,51 @@ main .news #sliderOne .type_practise img {
   border-radius: 5px;
 }
 
+.aboute_us_block_one {
+  width: 100%;
+  text-align: center;
+  background-image: url(../image/Background/bck2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aboute_us_block_one h1 {
+  font-size: 40px;
+}
+.aboute_us_block_one .top_comands {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+.aboute_us_block_one .top_comands .top_comands_block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.aboute_us_block_one .top_comands .top_comands_block .top_comands_text {
+  width: 46%;
+  font-size: 32px;
+}
+.aboute_us_block_one .top_comands .top_comands_block img {
+  width: 45%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.aboute_us_block_one .top_comands .top_comands_block:last-of-type {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .service {
   width: 100%;
   margin: auto;
   color: #000000;
+  background-image: url(../image/Background/bg-page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service .services {
   padding: 0 5%;
@@ -421,45 +473,15 @@ main .news #sliderOne .type_practise img {
   text-align: center;
 }
 .service .content li {
+  font-weight: 600;
   color: #000000;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
-
-.aboute_us_block_one {
-  text-align: center;
-  margin: 10px auto;
-  padding: 0 5%;
-  background-color: whitesmoke;
-}
-.aboute_us_block_one h1 {
-  font-size: 40px;
-}
-.aboute_us_block_one .top_comands {
-  width: 100%;
-  align-items: center;
-  margin: 0 auto;
-}
-.aboute_us_block_one .top_comands .top_comands_block {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px auto;
-}
-.aboute_us_block_one .top_comands .top_comands_block .top_comands_text {
-  width: 46%;
-  font-size: 32px;
-}
-.aboute_us_block_one .top_comands .top_comands_block .img {
-  background-color: green;
-  width: 45%;
-  height: 450px;
+.service .content li:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-}
-.aboute_us_block_one .top_comands .top_comands_block:last-of-type {
-  display: flex;
-  flex-direction: row-reverse;
+  padding: 5px;
 }
